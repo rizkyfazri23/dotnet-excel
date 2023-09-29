@@ -1,0 +1,6 @@
+@excel_HostAddress = http://localhost:5110
+
+GET {{excel_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
