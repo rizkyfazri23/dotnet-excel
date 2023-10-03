@@ -10,7 +10,8 @@
   <ItemGroup>
     <PackageReference Include="FreeSpire.XLS" Version="12.7.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0-rc.1.23421.29" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+
   </ItemGroup>
 
 </Project>

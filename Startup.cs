@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models; // Ubah ini menjadi menggunakan Microsoft.OpenApi.Models
+using Swashbuckle.AspNetCore.SwaggerUI; // Tambahkan using ini
 
 namespace excel
 {
@@ -19,6 +21,12 @@ namespace excel
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // Add Swagger service
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Excel API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +52,13 @@ namespace excel
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            // Enable Swagger middleware and UI
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Excel API V1");
             });
         }
     }

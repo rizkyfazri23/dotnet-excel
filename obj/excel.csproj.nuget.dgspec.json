@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.net\\excel\\excel.csproj": {}
+    "C:\\Ngoding\\.NET\\dotnet-excel\\excel.csproj": {}
   },
   "projects": {
-    "C:\\.net\\excel\\excel.csproj": {
+    "C:\\Ngoding\\.NET\\dotnet-excel\\excel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.net\\excel\\excel.csproj",
+        "projectUniqueName": "C:\\Ngoding\\.NET\\dotnet-excel\\excel.csproj",
         "projectName": "excel",
-        "projectPath": "C:\\.net\\excel\\excel.csproj",
-        "packagesPath": "C:\\Users\\INSPIRO\\.nuget\\packages\\",
-        "outputPath": "C:\\.net\\excel\\obj\\",
+        "projectPath": "C:\\Ngoding\\.NET\\dotnet-excel\\excel.csproj",
+        "packagesPath": "C:\\Users\\ASUSROG\\.nuget\\packages\\",
+        "outputPath": "C:\\Ngoding\\.NET\\dotnet-excel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\INSPIRO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ASUSROG\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -48,7 +48,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [

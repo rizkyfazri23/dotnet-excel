@@ -1,0 +1,16 @@
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\excel.exe
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\appsettings.Development.json
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\appsettings.json
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\excel.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\excel.deps.json
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\excel.runtimeconfig.json
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\excel.pdb
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Spire.Pdf.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Spire.XLS.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Microsoft.OpenApi.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Microsoft.Win32.SystemEvents.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Ngoding\.NET\dotnet-excel\bin\Release\net8.0\win-x64\publish\System.Drawing.Common.dll
