@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.net\\excel\\excel.csproj": {}
+    "c:\\.net\\excel\\excel.csproj": {}
   },
   "projects": {
-    "C:\\.net\\excel\\excel.csproj": {
+    "c:\\.net\\excel\\excel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.net\\excel\\excel.csproj",
+        "projectUniqueName": "c:\\.net\\excel\\excel.csproj",
         "projectName": "excel",
-        "projectPath": "C:\\.net\\excel\\excel.csproj",
+        "projectPath": "c:\\.net\\excel\\excel.csproj",
         "packagesPath": "C:\\Users\\INSPIRO\\.nuget\\packages\\",
-        "outputPath": "C:\\.net\\excel\\obj\\",
+        "outputPath": "c:\\.net\\excel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\INSPIRO\\AppData\\Roaming\\NuGet\\NuGet.Config"
