@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net7.0": {
       "FreeSpire.XLS/12.7.0": {
         "type": "package",
         "dependencies": {
@@ -26,18 +26,18 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/8.0.0-rc.1.23421.29": {
+      "Microsoft.AspNetCore.OpenApi/7.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
         },
         "compile": {
-          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
+          "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
+          "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {
             "related": ".xml"
           }
         },
@@ -342,18 +342,18 @@
         "license.txt"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/8.0.0-rc.1.23421.29": {
-      "sha512": "XZp2nLezRaSnHGl4g3iiMsHPyr/5y8SCQbuxuddOf8EQm8nxeVOM37ASfT1dJpbIFnSt6/T99m1YAbsnS6Fs7g==",
+    "Microsoft.AspNetCore.OpenApi/7.0.5": {
+      "sha512": "yxFvk9BsgL/eDJVsPp0zbUpL73u9uXLYTnWoMBvnJdm8+970YuhM2XWcDOyetjkp8l8z00MHgfYHCRXOnLx/+Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/8.0.0-rc.1.23421.29",
+      "path": "microsoft.aspnetcore.openapi/7.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
-        "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.8.0.0-rc.1.23421.29.nupkg.sha512",
+        "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net7.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -931,9 +931,9 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net7.0": [
       "FreeSpire.XLS >= 12.7.0",
-      "Microsoft.AspNetCore.OpenApi >= 8.0.0-rc.1.23421.29",
+      "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -943,24 +943,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\.net\\excel\\excel.csproj",
+      "projectUniqueName": "c:\\.net\\excel\\excel.csproj",
       "projectName": "excel",
-      "projectPath": "C:\\.net\\excel\\excel.csproj",
+      "projectPath": "c:\\.net\\excel\\excel.csproj",
       "packagesPath": "C:\\Users\\INSPIRO\\.nuget\\packages\\",
-      "outputPath": "C:\\.net\\excel\\obj\\",
+      "outputPath": "c:\\.net\\excel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\INSPIRO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\INSPIRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -971,8 +973,8 @@
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "FreeSpire.XLS": {
             "target": "Package",
@@ -980,7 +982,7 @@
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[8.0.0-rc.1.23421.29, )"
+            "version": "[7.0.5, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -1006,7 +1008,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5\\RuntimeIdentifierGraph.json"
       }
     }
   }

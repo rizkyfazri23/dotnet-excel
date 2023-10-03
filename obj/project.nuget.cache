@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YW7fi5H2Nibf/eJsNOjsxvg2uiRaKdQHurlzgf63XdUO8UfneMF1mcDjqrFHhsUMB00SkoFVhRgRMs2nEhHVzA==",
+  "dgSpecHash": "8UjbO0M+Ys8ttDvY+qJEdsBe8GA4z8H7vw7BGbw2kcsIpTSM6omncEnO6mAfKc8wBkBHbdOi5rBXqcet8wCSeA==",
   "success": true,
-  "projectFilePath": "c:\\.net\\excel\\excel.csproj",
+  "projectFilePath": "C:\\.net\\excel\\excel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\INSPIRO\\.nuget\\packages\\freespire.xls\\12.7.0\\freespire.xls.12.7.0.nupkg.sha512",
-    "C:\\Users\\INSPIRO\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0-rc.1.23421.29\\microsoft.aspnetcore.openapi.8.0.0-rc.1.23421.29.nupkg.sha512",
+    "C:\\Users\\INSPIRO\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\INSPIRO\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\INSPIRO\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\INSPIRO\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
