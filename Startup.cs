@@ -1,69 +1,69 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models; // Ubah ini menjadi menggunakan Microsoft.OpenApi.Models
-using Swashbuckle.AspNetCore.SwaggerUI; // Tambahkan using ini
+// using Microsoft.AspNetCore.Builder;
+// using Microsoft.AspNetCore.Hosting;
+// using Microsoft.Extensions.Configuration;
+// using Microsoft.Extensions.DependencyInjection;
+// using Microsoft.Extensions.Hosting;
+// using Microsoft.OpenApi.Models; // Ubah ini menjadi menggunakan Microsoft.OpenApi.Models
+// using Swashbuckle.AspNetCore.SwaggerUI; // Tambahkan using ini
 
-namespace excel
-{
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+// namespace excel
+// {
+//     public class Startup
+//     {
+//         public Startup(IConfiguration configuration)
+//         {
+//             Configuration = configuration;
+//         }
 
-        public IConfiguration Configuration { get; }
+//         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddControllers();
+//         // This method gets called by the runtime. Use this method to add services to the container.
+//         public void ConfigureServices(IServiceCollection services)
+//         {
+//             services.AddControllers();
 
-            // Add Swagger service
-            services.AddSwaggerGen(opt =>
-            {
-                OpenApiInfo info = new OpenApiInfo();
-                info.Title = "Excel API Swagger API Documentation";
-                info.Version = "v1";
-                opt.SwaggerDoc("v1", info);
-            });
-        }
+//             // Add Swagger service
+//             services.AddSwaggerGen(opt =>
+//             {
+//                 OpenApiInfo info = new OpenApiInfo();
+//                 info.Title = "Excel API Swagger API Documentation";
+//                 info.Version = "v1";
+//                 opt.SwaggerDoc("v1", info);
+//             });
+//         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
+//         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+//         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+//         {
+//             if (env.IsDevelopment())
+//             {
+//                 app.UseDeveloperExceptionPage();
+//             }
+//             else
+//             {
+//                 app.UseExceptionHandler("/Home/Error");
+//                 app.UseHsts();
+//             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+//             app.UseHttpsRedirection();
+//             // app.UseStaticFiles();
 
-            app.UseRouting();
+//             // app.UseRouting();
 
-            app.UseAuthorization();
+//             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+//             app.UseEndpoints(endpoints =>
+//             {
+//                 endpoints.MapControllers();
+//             });
 
-            // Enable Swagger middleware and UI
-            app.UseSwagger((option) =>
-            {
-                option.SerializeAsV2 = true;	
-            });
-            app.UseSwaggerUI();
+//             // Enable Swagger middleware and UI
+//             app.UseSwagger((option) =>
+//             {
+//                 option.SerializeAsV2 = true;	
+//             });
+//             app.UseSwaggerUI();
 
-        }
-    }
-}
+//         }
+//     }
+// }
