@@ -15,7 +15,7 @@ namespace APIMDEmployee.Utils
     {
         public static ISheet GetFirstSheet(this string filePath)
         {
-            ISheet result = null;
+            ISheet? result = null;
             if (Path.GetExtension(filePath).ToUpper().Equals(".XLSX"))
             {
                 result = filePath.GetFirstSheet_2007();
@@ -30,7 +30,7 @@ namespace APIMDEmployee.Utils
 
         public static ISheet GetFirstSheet_2007(this string filePath)
         {
-            XSSFWorkbook workbook2007 = null;
+            XSSFWorkbook? workbook2007 = null;
             using (FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.Read))
             {
                 workbook2007 = new XSSFWorkbook(file);
@@ -119,7 +119,7 @@ namespace APIMDEmployee.Utils
             return result;
         }
 
-        public static DateTime? GetDateCellValueNumericWithDefault(this IRow row, int colIndex, string param = null)
+        public static DateTime? GetDateCellValueNumericWithDefault(this IRow row, int colIndex, string? param = null)
         {
             ICell currentCell = row.GetCell(colIndex);
             DateTime? result = null;

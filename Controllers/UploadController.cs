@@ -36,24 +36,27 @@ namespace APIMDEmployee.Controllers
                 if (fileData.Length > 0)
                 {
 
-                    string folderPath = _configuration.GetSection("FolderPath").Value;
-                    if (!Directory.Exists(folderPath))
+                    string? folderPath = _configuration.GetSection("FolderPath").Value;
+                    if (folderPath != null)
                     {
-                        Directory.CreateDirectory(folderPath);
+                        if (!Directory.Exists(folderPath))
+                        {
+                            Directory.CreateDirectory(folderPath);
+                        }
+
+                        string filePath = Path.Combine(folderPath, Guid.NewGuid().ToString() + "-" + fileData.FileName);
+                        using (Stream fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await fileData.CopyToAsync(fileStream);
+                            fileStream.Close();
+                        }
+
+                        // Read excel file
+                        ISheet excelSheet = filePath.GetFirstSheet();
+
+                        ReadExcelDataManager excelDataManager = new ReadExcelDataManager(_context);
+                        response = excelDataManager.GetDataFromExcel(excelSheet);
                     }
-
-                    string filePath = Path.Combine(folderPath, Guid.NewGuid().ToString() + "-" + fileData.FileName);
-                    using (Stream fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await fileData.CopyToAsync(fileStream);
-                        fileStream.Close();
-                    }
-
-                    // Read excel file
-                    ISheet excelSheet = filePath.GetFirstSheet();
-
-                    ReadExcelDataManager excelDataManager = new ReadExcelDataManager(_context);
-                    response = excelDataManager.GetDataFromExcel(excelSheet);
                 }
 
                 return Ok(response);
