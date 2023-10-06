@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using excel; 
+using excel;
+using APIMDEmployee.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,11 @@ builder.Services.AddSwaggerGen(opt =>
     info.Title = "TestAPI1 Swagger API Documentation"; 
     info.Version = "v1";
     opt.SwaggerDoc("v1", info);
+});
+
+builder.Services.AddDbContext<ePaymentContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString"));
 });
 
 var app = builder.Build();
