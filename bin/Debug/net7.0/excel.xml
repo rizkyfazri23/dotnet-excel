@@ -4,15 +4,5 @@
         <name>excel</name>
     </assembly>
     <members>
-        <member name="T:excel.Models.Excel">
-            <summary>
-            Deskripsi kelas model Anda.
-            </summary>
-        </member>
-        <member name="P:excel.Models.Excel.FileExcel">
-            <summary>
-            Deskripsi properti FileExcel.
-            </summary>
-        </member>
     </members>
 </doc>
