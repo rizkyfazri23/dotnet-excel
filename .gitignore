@@ -1,0 +1,34 @@
+# Compiled binaries
+*.dll
+*.exe
+*.obj
+*.pdb
+
+# Intermediate build files
+**/obj
+**/bin
+
+# Dependencies
+**/node_modules
+**/bower_components
+
+# Visual Studio
+**/.vs
+**/ipch
+**/ipch/
+
+# MSBuild
+**/obj
+
+# User-specific files
+**/.gitignore
+**/.gitattributes
+**/.gitmodules
+
+# Temporary files
+*.tmp
+*.log
+*.lock
+
+# Markdown files
+*.md
